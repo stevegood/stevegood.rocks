@@ -1,0 +1,18 @@
+language: node_js
+branches:
+  only:
+    - master
+deploy:
+  edge: true
+  provider: cloudfoundry
+  api: https://api.run.pivotal.io
+  username: $CF_USERNAME
+  password: $CF_PASSWORD
+  organization: Steve Good
+  space: production
+node_js:
+  - "0.10.35"
+notifications:
+  email:
+    recipients:
+      - sgood@lanctr.com
