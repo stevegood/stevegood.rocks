@@ -19,7 +19,7 @@
   "main": "./core/index",
   "scripts": {
     "start": "node index",
-    "test": "grunt validate --verbose"
+    "test": "echo \"no tests specified\" && exit 0"
   },
   "engines": {
     "node": "~0.10.0 || ~0.12.0",
