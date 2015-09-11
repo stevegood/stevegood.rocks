@@ -11,7 +11,7 @@ deploy:
   organization: Steve Good
   space: production
 node_js:
-  - "0.10.35"
+  - "0.10.40"
 notifications:
   email:
     recipients:
