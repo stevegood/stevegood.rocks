@@ -513,6 +513,7 @@ body.nav-opened .site-wrapper {
 
 .main-header .inner {
     width: 80%;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .main-nav {
@@ -872,7 +873,6 @@ body.nav-opened .nav {
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: #fff;
-    -webkit-text-stroke: 1px #cccccc;
 }
 
 .page-description {
