@@ -1,0 +1,7 @@
+applications:
+- name: stevegood.rocks
+  memory: 256M
+  instances: 1
+  services:
+  - ghost-pg
+  - ghost-mail
