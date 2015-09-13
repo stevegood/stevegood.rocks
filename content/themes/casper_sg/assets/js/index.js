@@ -20,6 +20,9 @@
             $("body").toggleClass("nav-opened nav-closed");
         });
 
+        // lightbox plugin will auto-lightbox any linked image in the post content
+        $('.post-content a img').parent().magnificPopup({type:'image'});
+
     });
 
     // Arctic Scroll by Paul Adam Davis
