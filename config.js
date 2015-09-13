@@ -1,4 +1,4 @@
-require('newrelic');
+// require('newrelic');
 
 var path = require('path'),
     config, mysql;
