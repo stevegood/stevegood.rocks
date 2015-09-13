@@ -1,3 +1,5 @@
+require('newrelic');
+
 var path = require('path'),
     config, mysql;
 
@@ -8,7 +10,6 @@ var cfCore = {};
 var sqlCredentials = {};
 var mailCredentials = {};
 if (production) {
-  var newrelic = require('newrelic');
   var svcs = JSON.parse(process.env.VCAP_SERVICES);
   var sqlCredentials = svcs["elephantsql"][0].credentials;
   var mailCredentials = svcs["sendgrid"][0].credentials;
