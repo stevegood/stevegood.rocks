@@ -19,7 +19,7 @@ console.log(mailCredentials);
 
 config = {
     development: {
-      url: 'http://www.stevegood.rocks',
+      url: 'http://localhost:2368',
       database: {
         client: 'sqlite3',
         connection: {
