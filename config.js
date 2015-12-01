@@ -14,9 +14,7 @@ if (production) {
   var sqlCredentials = svcs["elephantsql"][0].credentials;
   var mailCredentials = svcs["sendgrid"][0].credentials;
   var port = process.env.PORT;
-  var host = process.env.VCAP_APP_HOST;
-  console.log('port:',port);
-  console.log('host:',host);
+  var host = process.env.VCAP_APP_HOST || '0.0.0.0';
 }
 console.log(sqlCredentials);
 console.log(mailCredentials);
