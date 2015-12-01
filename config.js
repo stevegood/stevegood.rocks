@@ -15,6 +15,8 @@ if (production) {
   var mailCredentials = svcs["sendgrid"][0].credentials;
   var port = process.env.PORT;
   var host = process.env.VCAP_APP_HOST;
+  console.log('port:',port);
+  console.log('host:',host);
 }
 console.log(sqlCredentials);
 console.log(mailCredentials);
